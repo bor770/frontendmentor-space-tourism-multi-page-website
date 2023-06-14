@@ -1,1 +1,27 @@
 /* You can add global styles to this file, and also import other style files */
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+:root {
+  --color-1: 11, 13, 23;
+  --color-2: 208, 214, 249;
+  --color-3: 255, 255, 255;
+
+  --font-sans: "Barlow", sans-serif;
+  --font-sans-condensed: "Barlow Condensed", sans-serif;
+  --font-serif: "Bellefair", serif;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: var(--font-sans), Roboto, "Helvetica Neue", sans-serif;
+  margin: 0;
+}
