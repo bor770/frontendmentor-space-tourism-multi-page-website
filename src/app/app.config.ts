@@ -9,12 +9,13 @@ import { provideStore } from '@ngrx/store';
 import { provideStoreDevtools } from '@ngrx/store-devtools';
 
 import { routes } from './app.routes';
+import * as fromRoot from './store/root.reducer';
 
 export const appConfig: ApplicationConfig = {
   providers: [
     provideRouter(routes, withPreloading(PreloadAllModules)),
     provideRouterStore(),
-    provideStore(),
+    provideStore(fromRoot.reducers),
     provideStoreDevtools({ maxAge: 25, logOnly: !isDevMode() }),
   ],
 };

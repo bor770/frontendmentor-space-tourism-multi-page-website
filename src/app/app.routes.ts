@@ -6,21 +6,21 @@ export const routes: Routes = [
   { component: HomeComponent, path: `` },
   {
     loadComponent: () =>
-      import(`./destination/destination.component`).then(
-        (m) => m.DestinationComponent
-      ),
-    path: `destination`,
+      import(`./crew/crew.component`).then((m) => m.CrewComponent),
+    path: `crew/:id`,
   },
   {
     loadComponent: () =>
-      import(`./crew/crew.component`).then((m) => m.CrewComponent),
-    path: `crew`,
+      import(`./destination/destination.component`).then(
+        (m) => m.DestinationComponent
+      ),
+    path: `destination/:id`,
   },
   {
     loadComponent: () =>
       import(`./technology/technology.component`).then(
         (m) => m.TechnologyComponent
       ),
-    path: `technology`,
+    path: `technology/:id`,
   },
 ];
