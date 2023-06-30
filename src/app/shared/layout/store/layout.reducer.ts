@@ -13,3 +13,5 @@ export const layoutReducer = createReducer(
   initialState,
   on(LayoutActions.setWidth, (state, { width }): State => ({ ...state, width }))
 );
+
+export const selectWidth = (state: State) => state.width;
