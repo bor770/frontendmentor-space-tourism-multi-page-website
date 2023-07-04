@@ -5,7 +5,7 @@ import { LetDirective } from '@ngrx/component';
 import { Store } from '@ngrx/store';
 import { Observable } from 'rxjs';
 
-import { NavigationComponent } from './navigation/navigation.component';
+import { NavigationComponent } from './shared/navigation/navigation.component';
 import { Width } from './shared/layout/layout.model';
 import * as fromRoot from './store/root.reducer';
 
@@ -18,13 +18,13 @@ import * as fromRoot from './store/root.reducer';
 })
 export class AppComponent implements OnInit {
   title = 'space-tourism-multi-page-website';
-  category$: Observable<string>;
+  page$: Observable<string>;
   width$: Observable<Width>;
 
   constructor(private store: Store) {}
 
   ngOnInit(): void {
-    this.category$ = this.store.select(fromRoot.selectRouterCategory);
+    this.page$ = this.store.select(fromRoot.selectRouterCategory);
     this.width$ = this.store.select(fromRoot.selectLayoutWidth);
   }
 }

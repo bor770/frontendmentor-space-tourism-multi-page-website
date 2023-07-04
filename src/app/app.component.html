@@ -1,20 +1,20 @@
 <div
-  *ngrxLet="{ category: category$, width: width$ } as observables"
+  *ngrxLet="{ page: page$, width: width$ } as observables"
   class="container"
   [ngClass]="observables.width"
   [ngStyle]="{
     backgroundImage:
-      'url(../assets/' +
-      observables.category +
+      'url(../assets/images/' +
+      observables.page +
       '/background-' +
-      observables.category +
+      observables.page +
       '-' +
       observables.width +
       '.jpg)'
   }"
 >
   <header>
-    <img src="../assets/shared/logo.svg" alt="Logo" />
+    <img src="../assets/images/shared/logo.svg" alt="Logo" />
     <nav>
       <app-navigation></app-navigation>
     </nav>
