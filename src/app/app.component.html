@@ -1,4 +1,18 @@
-<div class="container">
+<div
+  *ngrxLet="{ category: category$, width: width$ } as observables"
+  class="container"
+  [ngClass]="observables.width"
+  [ngStyle]="{
+    backgroundImage:
+      'url(../assets/' +
+      observables.category +
+      '/background-' +
+      observables.category +
+      '-' +
+      observables.width +
+      '.jpg)'
+  }"
+>
   <header>
     <img src="../assets/shared/logo.svg" alt="Logo" />
     <nav>

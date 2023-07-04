@@ -30,5 +30,5 @@ export const selectLayoutWidth = createSelector(
 
 export const selectRouterCategory = createSelector(
   getRouterSelectors().selectCurrentRoute,
-  (route) => route?.url[0].path
+  (route) => route?.url[0]?.path ?? `home`
 );
