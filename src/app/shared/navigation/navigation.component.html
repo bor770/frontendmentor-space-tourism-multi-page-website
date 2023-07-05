@@ -1,1 +1,7 @@
-<p>navigation works!</p>
+<ng-container *ngrxLet="width$ as width">
+  <img
+    *ngIf="width === 'mobile'"
+    src="../../../assets/images/shared/icon-hamburger.svg"
+    alt="Menu Icon"
+  />
+</ng-container>

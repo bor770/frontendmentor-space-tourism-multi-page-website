@@ -1,0 +1,77 @@
+.main {
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  display: contents;
+  text-transform: uppercase;
+}
+
+.so {
+  color: rgb(var(--color-2));
+  font-family: var(--font-sans-condensed);
+  font-weight: 400;
+}
+
+.space {
+  color: rgb(var(--color-3));
+  font-family: var(--font-serif);
+  font-weight: 400;
+}
+
+p {
+  color: rgb(var(--color-2));
+}
+
+.explore {
+  align-content: center;
+  aspect-ratio: 1;
+  background-color: rgb(var(--color-3));
+  border-radius: 100%;
+  display: grid;
+  margin-inline: auto;
+}
+
+a {
+  color: rgb(var(--color-1));
+  font-family: var(--font-serif);
+  font-size: var(--a-font-size);
+  height: var(--a-font-size);
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.mobile {
+  --a-font-size: 1.25rem;
+  text-align: center;
+}
+
+.mobile .main {
+  gap: 1rem;
+  margin-bottom: 5.06rem;
+}
+
+.mobile .so {
+  font-size: 1rem;
+  letter-spacing: 2.7px;
+}
+
+.mobile .space {
+  font-size: 5rem;
+  line-height: 6.25rem;
+}
+
+.mobile p {
+  font-size: 0.9375rem;
+  line-height: 1.5625rem;
+}
+
+.mobile .explore {
+  margin-bottom: 1.5rem;
+  width: 9.375rem;
+}
+
+.mobile a {
+  letter-spacing: 1.25px;
+}

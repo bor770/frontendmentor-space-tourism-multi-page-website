@@ -1,4 +1,4 @@
-.container {
+div {
   background-size: cover;
 }
 
@@ -10,6 +10,10 @@ header {
 
 .mobile {
   padding: 1.5rem;
+}
+
+.mobile header {
+  margin-bottom: 3rem;
 }
 
 .mobile img {
