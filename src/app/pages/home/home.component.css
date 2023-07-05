@@ -24,26 +24,27 @@ p {
   color: rgb(var(--color-2));
 }
 
-.explore {
+a {
   align-content: center;
   aspect-ratio: 1;
   background-color: rgb(var(--color-3));
   border-radius: 100%;
   display: grid;
   margin-inline: auto;
+  text-decoration: none;
 }
 
-a {
+.explore {
   color: rgb(var(--color-1));
   font-family: var(--font-serif);
   font-size: var(--a-font-size);
   height: var(--a-font-size);
-  text-decoration: none;
   text-transform: uppercase;
 }
 
 .mobile {
   --a-font-size: 1.25rem;
+  margin-bottom: 1.5rem;
   text-align: center;
 }
 
@@ -67,11 +68,10 @@ a {
   line-height: 1.5625rem;
 }
 
-.mobile .explore {
-  margin-bottom: 1.5rem;
+.mobile a {
   width: 9.375rem;
 }
 
-.mobile a {
+.mobile .explore {
   letter-spacing: 1.25px;
 }
