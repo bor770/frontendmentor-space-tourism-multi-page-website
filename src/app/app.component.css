@@ -7,15 +7,3 @@ header {
   display: flex;
   justify-content: space-between;
 }
-
-.mobile {
-  padding: 1.5rem;
-}
-
-.mobile header {
-  margin-bottom: 3rem;
-}
-
-.mobile img {
-  width: 2.5rem;
-}

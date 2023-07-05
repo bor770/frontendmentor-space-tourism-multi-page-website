@@ -12,7 +12,7 @@ import * as fromRoot from '../../store/root.reducer';
   imports: [CommonModule, LetDirective, RouterModule],
   selector: 'app-home',
   standalone: true,
-  styleUrls: ['./home.component.css'],
+  styleUrls: ['./home.component.css', `./mobile.home.component.css`],
   templateUrl: './home.component.html',
 })
 export class HomeComponent implements OnInit {

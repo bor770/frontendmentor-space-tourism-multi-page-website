@@ -47,34 +47,3 @@ a:hover {
   height: var(--explore-font-size);
   text-transform: uppercase;
 }
-
-.mobile {
-  --a-width: 9.375rem;
-  --explore-font-size: 1.25rem;
-  margin-bottom: 1.5rem;
-  text-align: center;
-}
-
-.mobile .main {
-  gap: 1rem;
-  margin-bottom: 5.06rem;
-}
-
-.mobile .so {
-  font-size: 1rem;
-  letter-spacing: 2.7px;
-}
-
-.mobile .space {
-  font-size: 5rem;
-  line-height: 6.25rem;
-}
-
-.mobile p {
-  font-size: 0.9375rem;
-  line-height: 1.5625rem;
-}
-
-.mobile .explore {
-  letter-spacing: 1.25px;
-}
