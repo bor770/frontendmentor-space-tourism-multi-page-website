@@ -32,18 +32,25 @@ a {
   display: grid;
   margin-inline: auto;
   text-decoration: none;
+  transition: box-shadow 0.5s;
+  width: var(--a-width);
+}
+
+a:hover {
+  box-shadow: 0 0 0 calc(0.3 * var(--a-width)) rgba(var(--color-3), 0.1);
 }
 
 .explore {
   color: rgb(var(--color-1));
   font-family: var(--font-serif);
-  font-size: var(--a-font-size);
-  height: var(--a-font-size);
+  font-size: var(--explore-font-size);
+  height: var(--explore-font-size);
   text-transform: uppercase;
 }
 
 .mobile {
-  --a-font-size: 1.25rem;
+  --a-width: 9.375rem;
+  --explore-font-size: 1.25rem;
   margin-bottom: 1.5rem;
   text-align: center;
 }
@@ -66,10 +73,6 @@ a {
 .mobile p {
   font-size: 0.9375rem;
   line-height: 1.5625rem;
-}
-
-.mobile a {
-  width: 9.375rem;
 }
 
 .mobile .explore {
