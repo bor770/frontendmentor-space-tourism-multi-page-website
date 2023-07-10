@@ -1,0 +1,11 @@
+<button (click)="onClose()">
+  <img src="../../../../assets/images/shared/icon-close.svg" alt="Close Icon" />
+</button>
+<ol>
+  <li *ngFor="let page of pages; let i = index">
+    <a [routerLink]="translatePage(page)" (click)="onClose()">
+      <span class="index">0{{ i }}</span>
+      <span class="page">{{ page }}</span>
+    </a>
+  </li>
+</ol>

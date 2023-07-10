@@ -1,3 +1,7 @@
+:host {
+  position: relative;
+}
+
 div {
   background-size: cover;
 }

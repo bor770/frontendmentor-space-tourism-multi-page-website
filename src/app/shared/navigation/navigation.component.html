@@ -1,7 +1,14 @@
 <ng-container *ngrxLet="width$ as width">
-  <img
-    *ngIf="width === 'mobile'"
-    src="../../../assets/images/shared/icon-hamburger.svg"
-    alt="Menu Icon"
-  />
+  <ng-container *ngIf="width === 'mobile'">
+    <button *ngIf="!isMenuDisplayed" (click)="onMenuToggle()">
+      <img
+        src="../../../assets/images/shared/icon-hamburger.svg"
+        alt="Menu Icon"
+      />
+    </button>
+    <app-mobile-menu
+      *ngIf="isMenuDisplayed"
+      (closed)="onMenuToggle()"
+    ></app-mobile-menu>
+  </ng-container>
 </ng-container>
