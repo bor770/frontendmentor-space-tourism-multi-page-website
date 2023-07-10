@@ -8,6 +8,7 @@
     </button>
     <app-mobile-menu
       *ngIf="isMenuDisplayed"
+      [@menu]
       (closed)="onMenuToggle()"
     ></app-mobile-menu>
   </ng-container>
