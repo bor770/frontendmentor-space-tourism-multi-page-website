@@ -1,1 +1,10 @@
-<p>menu works!</p>
+<div *ngrxLet="width$ as width" [ngClass]="width">
+  <ol>
+    <li *ngFor="let page of pages; let i = index">
+      <a [routerLink]="translatePage(page)">
+        <span class="index">0{{ i }}</span>
+        <span>{{ page }}</span>
+      </a>
+    </li>
+  </ol>
+</div>

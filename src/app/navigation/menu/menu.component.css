@@ -1,0 +1,15 @@
+ol {
+  list-style-type: none;
+}
+
+a {
+  color: rgb(var(--color-3));
+  font-family: var(--font-sans-condensed);
+  letter-spacing: 2.7px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.index {
+  font-weight: 700;
+}

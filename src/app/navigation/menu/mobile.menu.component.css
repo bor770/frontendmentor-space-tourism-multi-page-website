@@ -1,0 +1,13 @@
+.mobile ol {
+  display: grid;
+  gap: 2rem 11px;
+  grid-template-columns: max-content auto;
+}
+
+.mobile li {
+  display: contents;
+}
+
+.mobile a {
+  display: contents;
+}

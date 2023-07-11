@@ -1,20 +1,16 @@
 import { CommonModule } from '@angular/common';
 import { Component, EventEmitter, Output } from '@angular/core';
-import { RouterModule } from '@angular/router';
 
-import { pages, translatePage } from '../pages.model';
+import { MenuComponent } from '../menu/menu.component';
 
 @Component({
-  imports: [CommonModule, RouterModule],
+  imports: [CommonModule, MenuComponent],
   selector: 'app-mobile-menu',
   standalone: true,
   styleUrls: ['./mobile-menu.component.css'],
   templateUrl: './mobile-menu.component.html',
 })
 export class MobileMenuComponent {
-  pages = pages;
-  translatePage = translatePage;
-
   @Output() closed = new EventEmitter();
 
   onClose() {
