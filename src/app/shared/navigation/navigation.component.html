@@ -12,4 +12,5 @@
       (closed)="onMenuToggle()"
     ></app-mobile-menu>
   </ng-container>
+  <ng-container *ngIf="['tablet', 'desktop'].includes(width)"></ng-container>
 </ng-container>

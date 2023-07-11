@@ -2,7 +2,7 @@ import { CommonModule } from '@angular/common';
 import { Component, EventEmitter, Output } from '@angular/core';
 import { RouterModule } from '@angular/router';
 
-import { Page, pages } from '../pages.model';
+import { pages, translatePage } from '../pages.model';
 
 @Component({
   imports: [CommonModule, RouterModule],
@@ -13,14 +13,11 @@ import { Page, pages } from '../pages.model';
 })
 export class MobileMenuComponent {
   pages = pages;
+  translatePage = translatePage;
 
   @Output() closed = new EventEmitter();
 
   onClose() {
     this.closed.emit();
-  }
-
-  translatePage(page: Page) {
-    return page === `home` ? `` : `${page}/1`;
   }
 }
