@@ -12,8 +12,8 @@ import { Store } from '@ngrx/store';
 import { Observable } from 'rxjs';
 
 import { MobileMenuComponent } from './mobile-menu/mobile-menu.component';
-import { Width } from '../layout/layout.model';
-import * as fromRoot from '../../store/root.reducer';
+import { Width } from '../shared/layout/layout.model';
+import * as fromRoot from '../store/root.reducer';
 
 @Component({
   animations: [

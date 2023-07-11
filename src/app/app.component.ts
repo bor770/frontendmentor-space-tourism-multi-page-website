@@ -5,7 +5,7 @@ import { LetDirective } from '@ngrx/component';
 import { Store } from '@ngrx/store';
 import { Observable } from 'rxjs';
 
-import { NavigationComponent } from './shared/navigation/navigation.component';
+import { NavigationComponent } from './navigation/navigation.component';
 import { Width } from './shared/layout/layout.model';
 import * as fromRoot from './store/root.reducer';
 
