@@ -11,9 +11,11 @@ import { LetDirective } from '@ngrx/component';
 import { Store } from '@ngrx/store';
 import { Observable } from 'rxjs';
 
+import { MenuComponent } from './menu/menu.component';
 import { MobileMenuComponent } from './mobile-menu/mobile-menu.component';
 import { Width } from '../shared/layout/layout.model';
 import * as fromRoot from '../store/root.reducer';
+import * as NavigationActions from './store/navigation.actions';
 
 @Component({
   animations: [
@@ -28,23 +30,24 @@ import * as fromRoot from '../store/root.reducer';
       ]),
     ]),
   ],
-  imports: [CommonModule, LetDirective, MobileMenuComponent],
+  imports: [CommonModule, LetDirective, MenuComponent, MobileMenuComponent],
   selector: 'app-navigation',
   standalone: true,
   styleUrls: ['./navigation.component.css'],
   templateUrl: './navigation.component.html',
 })
 export class NavigationComponent implements OnInit {
-  isMenuDisplayed = false;
+  isMenuOpen$: Observable<boolean>;
   width$: Observable<Width>;
 
   constructor(private store: Store) {}
 
   ngOnInit(): void {
+    this.isMenuOpen$ = this.store.select(fromRoot.selectNavigationIsMenuOpen);
     this.width$ = this.store.select(fromRoot.selectLayoutWidth);
   }
 
-  onMenuToggle() {
-    this.isMenuDisplayed = !this.isMenuDisplayed;
+  onOpenMobileMenu() {
+    this.store.dispatch(NavigationActions.toggleMenu());
   }
 }

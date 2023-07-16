@@ -1,7 +1,9 @@
 import { CommonModule } from '@angular/common';
-import { Component, EventEmitter, Output } from '@angular/core';
+import { Component } from '@angular/core';
+import { Store } from '@ngrx/store';
 
 import { MenuComponent } from '../menu/menu.component';
+import * as NavigationActions from '../store/navigation.actions';
 
 @Component({
   imports: [CommonModule, MenuComponent],
@@ -11,9 +13,9 @@ import { MenuComponent } from '../menu/menu.component';
   templateUrl: './mobile-menu.component.html',
 })
 export class MobileMenuComponent {
-  @Output() closed = new EventEmitter();
+  constructor(private store: Store) {}
 
   onClose() {
-    this.closed.emit();
+    this.store.dispatch(NavigationActions.toggleMenu());
   }
 }

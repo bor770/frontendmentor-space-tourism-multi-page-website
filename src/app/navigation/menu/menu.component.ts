@@ -8,12 +8,17 @@ import { Observable } from 'rxjs';
 import { pages, translatePage } from '../pages.model';
 import { Width } from '../../shared/layout/layout.model';
 import * as fromRoot from '../../store/root.reducer';
+import * as NavigationActions from '../store/navigation.actions';
 
 @Component({
   imports: [CommonModule, LetDirective, RouterModule],
   selector: 'app-menu',
   standalone: true,
-  styleUrls: ['./menu.component.css', `./mobile.menu.component.css`],
+  styleUrls: [
+    './menu.component.css',
+    `./mobile.menu.component.css`,
+    `./tablet.menu.component.css`,
+  ],
   templateUrl: './menu.component.html',
 })
 export class MenuComponent implements OnInit {
@@ -25,5 +30,9 @@ export class MenuComponent implements OnInit {
 
   ngOnInit(): void {
     this.width$ = this.store.select(fromRoot.selectLayoutWidth);
+  }
+
+  onClose() {
+    this.store.dispatch(NavigationActions.toggleMenu());
   }
 }

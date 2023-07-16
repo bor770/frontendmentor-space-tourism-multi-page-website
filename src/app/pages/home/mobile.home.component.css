@@ -17,12 +17,12 @@
 
 .mobile .space {
   font-size: 5rem;
-  line-height: 6.25rem;
+  line-height: 125%;
 }
 
 .mobile p {
   font-size: 0.9375rem;
-  line-height: 1.5625rem;
+  line-height: 166.667%;
 }
 
 .mobile .explore {

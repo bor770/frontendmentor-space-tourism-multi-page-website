@@ -1,16 +1,16 @@
-<ng-container *ngrxLet="width$ as width">
-  <ng-container *ngIf="width === 'mobile'">
-    <button *ngIf="!isMenuDisplayed" (click)="onMenuToggle()">
+<ng-container
+  *ngrxLet="{ isMenuOpen: isMenuOpen$, width: width$ } as observables"
+>
+  <ng-container *ngIf="observables.width === 'mobile'">
+    <button *ngIf="!observables.isMenuOpen" (click)="onOpenMobileMenu()">
       <img
         src="../../../assets/images/shared/icon-hamburger.svg"
         alt="Menu Icon"
       />
     </button>
-    <app-mobile-menu
-      *ngIf="isMenuDisplayed"
-      [@menu]
-      (closed)="onMenuToggle()"
-    ></app-mobile-menu>
+    <app-mobile-menu *ngIf="observables.isMenuOpen" [@menu]></app-mobile-menu>
   </ng-container>
-  <ng-container *ngIf="['tablet', 'desktop'].includes(width)"></ng-container>
+  <ng-container *ngIf="observables.width === 'tablet'">
+    <app-menu></app-menu>
+  </ng-container>
 </ng-container>
