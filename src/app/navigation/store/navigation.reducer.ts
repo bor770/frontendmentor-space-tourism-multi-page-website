@@ -11,8 +11,12 @@ const initialState: State = { isMenuOpen: false };
 export const navigationReducer = createReducer(
   initialState,
   on(
-    NavigationActions.toggleMenu,
-    (state): State => ({ ...state, isMenuOpen: !state.isMenuOpen })
+    NavigationActions.closeMenu,
+    (state): State => ({ ...state, isMenuOpen: false })
+  ),
+  on(
+    NavigationActions.openMenu,
+    (state): State => ({ ...state, isMenuOpen: true })
   )
 );
 

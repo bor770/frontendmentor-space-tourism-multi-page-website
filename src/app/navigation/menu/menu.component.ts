@@ -18,6 +18,7 @@ import * as NavigationActions from '../store/navigation.actions';
     './menu.component.css',
     `./mobile.menu.component.css`,
     `./tablet.menu.component.css`,
+    `./desktop.menu.component.css`,
   ],
   templateUrl: './menu.component.html',
 })
@@ -33,6 +34,6 @@ export class MenuComponent implements OnInit {
   }
 
   onClose() {
-    this.store.dispatch(NavigationActions.toggleMenu());
+    this.store.dispatch(NavigationActions.closeMenu());
   }
 }

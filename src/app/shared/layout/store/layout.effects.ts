@@ -4,11 +4,12 @@ import { createEffect } from '@ngrx/effects';
 import { filter, map } from 'rxjs';
 
 import * as LayoutActions from './layout.actions';
+import * as NavigationActions from '../../../navigation/store/navigation.actions';
 
 @Injectable()
 export class LayoutEffects {
   setMobile = createEffect(() => {
-    return this.breakpointObserver.observe([Breakpoints.XSmall]).pipe(
+    return this.breakpointObserver.observe(Breakpoints.XSmall).pipe(
       filter((result) => result.matches),
       map(() => LayoutActions.setWidth({ width: 'mobile' }))
     );
@@ -30,6 +31,12 @@ export class LayoutEffects {
         filter((result) => result.matches),
         map(() => LayoutActions.setWidth({ width: 'desktop' }))
       );
+  });
+
+  closeMenu = createEffect(() => {
+    return this.breakpointObserver
+      .observe(Breakpoints.XSmall)
+      .pipe(map(() => NavigationActions.closeMenu()));
   });
 
   constructor(private breakpointObserver: BreakpointObserver) {}

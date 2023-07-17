@@ -1,3 +1,4 @@
 import { createAction } from '@ngrx/store';
 
-export const toggleMenu = createAction(`[Navigation] Toggle Menu`);
+export const closeMenu = createAction(`[Navigation] Close Menu`);
+export const openMenu = createAction(`[Navigation] Open Menu`);

@@ -47,7 +47,7 @@ export class NavigationComponent implements OnInit {
     this.width$ = this.store.select(fromRoot.selectLayoutWidth);
   }
 
-  onOpenMobileMenu() {
-    this.store.dispatch(NavigationActions.toggleMenu());
+  onOpenMenu() {
+    this.store.dispatch(NavigationActions.openMenu());
   }
 }

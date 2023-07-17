@@ -6,7 +6,9 @@
       [routerLinkActiveOptions]="{ exact: true }"
     >
       <a [routerLink]="translatePage(page)" (click)="onClose()">
-        <span *ngIf="width === 'mobile'" class="index">0{{ i }}</span>
+        <span *ngIf="width === 'mobile' || width === 'desktop'" class="index"
+          >0{{ i }}</span
+        >
         <span>{{ page }}</span>
       </a>
     </li>
