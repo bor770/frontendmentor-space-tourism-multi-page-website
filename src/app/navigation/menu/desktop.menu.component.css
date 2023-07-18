@@ -1,3 +1,31 @@
 .desktop ol {
+  backdrop-filter: blur(40px);
+  background-color: rgba(var(--color-3), 0.04);
+  display: flex;
   height: 6rem;
+  justify-content: space-between;
+  padding-inline: 7.69rem 10.44rem;
+  width: 51.875rem;
+}
+
+.desktop li {
+  align-items: center;
+  border-bottom: 3px solid transparent;
+  border-top: 3px solid transparent;
+  display: flex;
+  pointer-events: none;
+}
+
+.desktop li:hover {
+  border-bottom-color: rgba(var(--color-3), 0.5);
+}
+
+.desktop li.active {
+  border-bottom-color: rgb(var(--color-3));
+}
+
+.desktop a {
+  display: flex;
+  gap: 0.766rem;
+  pointer-events: auto;
 }

@@ -1,14 +1,20 @@
 <ng-container
-  *ngrxLet="{ isMenuOpen: isMenuOpen$, width: width$ } as observables"
+  *ngrxLet="{
+    isMobileMenuOpen: isMobileMenuOpen$,
+    width: width$
+  } as observables"
 >
   <ng-container *ngIf="observables.width === 'mobile'">
-    <button *ngIf="!observables.isMenuOpen" (click)="onOpenMenu()">
+    <button *ngIf="!observables.isMobileMenuOpen" (click)="onOpenMobileMenu()">
       <img
         src="../../../assets/images/shared/icon-hamburger.svg"
         alt="Menu Icon"
       />
     </button>
-    <app-mobile-menu *ngIf="observables.isMenuOpen" [@menu]></app-mobile-menu>
+    <app-mobile-menu
+      *ngIf="observables.isMobileMenuOpen"
+      [@menu]
+    ></app-mobile-menu>
   </ng-container>
   <ng-container
     *ngIf="observables.width === 'tablet' || observables.width === 'desktop'"

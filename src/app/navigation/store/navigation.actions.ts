@@ -1,4 +1,4 @@
 import { createAction } from '@ngrx/store';
 
-export const closeMenu = createAction(`[Navigation] Close Menu`);
-export const openMenu = createAction(`[Navigation] Open Menu`);
+export const closeMobileMenu = createAction(`[Navigation] Close Mobile Menu`);
+export const openMobileMenu = createAction(`[Navigation] Open Mobile Menu`);

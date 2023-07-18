@@ -37,17 +37,19 @@ import * as NavigationActions from './store/navigation.actions';
   templateUrl: './navigation.component.html',
 })
 export class NavigationComponent implements OnInit {
-  isMenuOpen$: Observable<boolean>;
+  isMobileMenuOpen$: Observable<boolean>;
   width$: Observable<Width>;
 
   constructor(private store: Store) {}
 
   ngOnInit(): void {
-    this.isMenuOpen$ = this.store.select(fromRoot.selectNavigationIsMenuOpen);
+    this.isMobileMenuOpen$ = this.store.select(
+      fromRoot.selectNavigationIsMobileMenuOpen
+    );
     this.width$ = this.store.select(fromRoot.selectLayoutWidth);
   }
 
-  onOpenMenu() {
-    this.store.dispatch(NavigationActions.openMenu());
+  onOpenMobileMenu() {
+    this.store.dispatch(NavigationActions.openMobileMenu());
   }
 }

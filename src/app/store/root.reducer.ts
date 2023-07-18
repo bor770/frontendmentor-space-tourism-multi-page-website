@@ -34,9 +34,9 @@ export const selectLayoutWidth = createSelector(
 const selectNavigation =
   createFeatureSelector<fromNavigation.State>(`navigation`);
 
-export const selectNavigationIsMenuOpen = createSelector(
+export const selectNavigationIsMobileMenuOpen = createSelector(
   selectNavigation,
-  fromNavigation.selectIsMenuOpen
+  fromNavigation.selectIsMobileMenuOpen
 );
 
 export const selectRouterCategory = createSelector(

@@ -33,10 +33,10 @@ export class LayoutEffects {
       );
   });
 
-  closeMenu = createEffect(() => {
+  closeMobileMenu = createEffect(() => {
     return this.breakpointObserver
       .observe(Breakpoints.XSmall)
-      .pipe(map(() => NavigationActions.closeMenu()));
+      .pipe(map(() => NavigationActions.closeMobileMenu()));
   });
 
   constructor(private breakpointObserver: BreakpointObserver) {}

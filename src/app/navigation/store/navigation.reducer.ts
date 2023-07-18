@@ -3,21 +3,21 @@ import { createReducer, on } from '@ngrx/store';
 import * as NavigationActions from './navigation.actions';
 
 export interface State {
-  isMenuOpen: boolean;
+  isMobileMenuOpen: boolean;
 }
 
-const initialState: State = { isMenuOpen: false };
+const initialState: State = { isMobileMenuOpen: false };
 
 export const navigationReducer = createReducer(
   initialState,
   on(
-    NavigationActions.closeMenu,
-    (state): State => ({ ...state, isMenuOpen: false })
+    NavigationActions.closeMobileMenu,
+    (state): State => ({ ...state, isMobileMenuOpen: false })
   ),
   on(
-    NavigationActions.openMenu,
-    (state): State => ({ ...state, isMenuOpen: true })
+    NavigationActions.openMobileMenu,
+    (state): State => ({ ...state, isMobileMenuOpen: true })
   )
 );
 
-export const selectIsMenuOpen = (state: State) => state.isMenuOpen;
+export const selectIsMobileMenuOpen = (state: State) => state.isMobileMenuOpen;

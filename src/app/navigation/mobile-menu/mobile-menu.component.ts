@@ -16,6 +16,6 @@ export class MobileMenuComponent {
   constructor(private store: Store) {}
 
   onClose() {
-    this.store.dispatch(NavigationActions.closeMenu());
+    this.store.dispatch(NavigationActions.closeMobileMenu());
   }
 }
