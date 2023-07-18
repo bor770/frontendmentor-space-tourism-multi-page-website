@@ -1,5 +1,5 @@
 .tablet {
-  --a-width: 15.125rem;
+  --a-width: 15.12rem;
   --explore-font-size: 2rem;
   text-align: center;
 }
@@ -11,11 +11,11 @@
 
 .tablet .so {
   font-size: 1.25rem;
-  letter-spacing: 3.375px;
+  letter-spacing: 3.37px;
 }
 
 .tablet .space {
-  font-size: 9.375rem;
+  font-size: 9.37rem;
   line-height: 100%;
 }
 

@@ -1,5 +1,5 @@
 .mobile {
-  --a-width: 9.375rem;
+  --a-width: 9.37rem;
   --explore-font-size: 1.25rem;
   text-align: center;
 }
@@ -20,8 +20,8 @@
 }
 
 .mobile p {
-  font-size: 0.9375rem;
-  line-height: 166.667%;
+  font-size: 0.94rem;
+  line-height: 166.67%;
 }
 
 .mobile .explore {
