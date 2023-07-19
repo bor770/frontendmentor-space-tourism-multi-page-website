@@ -5,19 +5,18 @@
 
 h1 {
   display: contents;
+  font-weight: 400;
   text-transform: uppercase;
 }
 
 .so {
   color: rgb(var(--color-2));
   font-family: var(--font-sans-condensed);
-  font-weight: 400;
 }
 
 .space {
   color: rgb(var(--color-3));
   font-family: var(--font-serif);
-  font-weight: 400;
 }
 
 p {

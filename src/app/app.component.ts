@@ -14,10 +14,10 @@ import * as fromRoot from './store/root.reducer';
   selector: 'app-root',
   standalone: true,
   styleUrls: [
-    './app.component.css',
-    `./mobile.app.component.css`,
-    `./tablet.app.component.css`,
-    `./desktop.app.component.css`,
+    './styles/app.component.css',
+    `./styles/mobile.app.component.css`,
+    `./styles/tablet.app.component.css`,
+    `./styles/desktop.app.component.css`,
   ],
   templateUrl: './app.component.html',
 })

@@ -16,7 +16,6 @@
   left: calc(62.34rem - 100vw);
   position: absolute;
   top: 50%;
-  /* width: 29.5625rem; */
   width: calc(100vw - 60.44rem);
 }
 

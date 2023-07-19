@@ -15,10 +15,10 @@ import * as NavigationActions from '../store/navigation.actions';
   selector: 'app-menu',
   standalone: true,
   styleUrls: [
-    './menu.component.css',
-    `./mobile.menu.component.css`,
-    `./tablet.menu.component.css`,
-    `./desktop.menu.component.css`,
+    './styles/menu.component.css',
+    `./styles/mobile.menu.component.css`,
+    `./styles/tablet.menu.component.css`,
+    `./styles/desktop.menu.component.css`,
   ],
   templateUrl: './menu.component.html',
 })

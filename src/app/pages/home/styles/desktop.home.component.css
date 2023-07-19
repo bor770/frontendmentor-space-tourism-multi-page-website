@@ -1,0 +1,31 @@
+.desktop {
+  --a-width: 17.12rem;
+  --explore-font-size: 2rem;
+  align-items: flex-end;
+  display: flex;
+  flex-direction: row;
+}
+
+.desktop .main {
+  gap: 1.5rem;
+  margin-left: 6.86rem;
+}
+
+.desktop .so {
+  font-size: 1.75rem;
+  letter-spacing: 4.72px;
+}
+
+.desktop .space {
+  font-size: 9.37rem;
+}
+
+.desktop p {
+  font-size: 1.125rem;
+  line-height: 177.78%;
+  width: 27.75rem;
+}
+
+.desktop a {
+  justify-content: center;
+}
