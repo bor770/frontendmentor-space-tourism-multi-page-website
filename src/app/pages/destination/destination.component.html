@@ -1,2 +1,35 @@
-<p>destination works!</p>
-{{ data }}
+<div
+  *ngrxLet="{
+    allDestinations: data.destinations,
+    destination: data.destinations[index$ | async],
+    width: width$ | async
+  } as data"
+  [ngClass]="data.width"
+>
+  <h1>
+    <span class="index">01</span>
+    <span class="heading">Pick your destination</span>
+  </h1>
+  <img
+    [src]="getImagePath(data.destination.images.webp)"
+    [alt]="data.destination.name + 'image'"
+  />
+  <div class="data">
+    <ul>
+      <li
+        *ngFor="let destination of data.allDestinations; let i = index"
+        routerLinkActive="active"
+      >
+        <a [routerLink]="getRouterLink(i)">{{ destination.name }}</a>
+      </li>
+    </ul>
+    <h2>{{ data.destination.name }}</h2>
+    <p>{{ data.destination.description }}</p>
+    <dl>
+      <dt>Avg. distance</dt>
+      <dd>{{ data.destination.distance }}</dd>
+      <dt>Est. travel time</dt>
+      <dd>{{ data.destination.travel }}</dd>
+    </dl>
+  </div>
+</div>

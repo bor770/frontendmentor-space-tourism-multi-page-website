@@ -28,7 +28,7 @@ const selectLayout = createFeatureSelector<fromLayout.State>(`layout`);
 
 export const selectLayoutWidth = createSelector(
   selectLayout,
-  fromLayout.selectWidth
+  fromLayout.getWidth
 );
 
 const selectNavigation =
@@ -36,10 +36,14 @@ const selectNavigation =
 
 export const selectNavigationIsMobileMenuOpen = createSelector(
   selectNavigation,
-  fromNavigation.selectIsMobileMenuOpen
+  fromNavigation.getIsMobileMenuOpen
 );
 
 export const selectRouterCategory = createSelector(
   getRouterSelectors().selectCurrentRoute,
   (route) => route?.url[0]?.path ?? `home`
+);
+export const selectRouterIndex = createSelector(
+  getRouterSelectors().selectRouteParam(`index`),
+  (index) => +index - 1
 );

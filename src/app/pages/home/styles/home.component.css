@@ -10,17 +10,12 @@ h1 {
 }
 
 .so {
-  color: rgb(var(--color-2));
   font-family: var(--font-sans-condensed);
 }
 
 .space {
   color: rgb(var(--color-3));
   font-family: var(--font-serif);
-}
-
-p {
-  color: rgb(var(--color-2));
 }
 
 a {

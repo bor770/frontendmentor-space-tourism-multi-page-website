@@ -1,0 +1,67 @@
+:host {
+  text-transform: uppercase;
+}
+
+h1 {
+  color: rgb(var(--color-3));
+  display: flex;
+  font-family: var(--font-sans-condensed);
+  letter-spacing: 2.7px;
+  width: fit-content;
+}
+
+.index {
+  opacity: 0.25;
+}
+
+.heading {
+  font-weight: 400;
+}
+
+ul {
+  display: flex;
+  font-family: var(--font-sans-condensed);
+  justify-content: space-between;
+  list-style-type: none;
+}
+
+li {
+  border-bottom: 3px solid transparent;
+}
+
+li:hover {
+  border-bottom-color: rgba(var(--color-3), 0.5);
+}
+
+li.active {
+  border-bottom-color: rgb(var(--color-3));
+  color: rgb(var(--color-3));
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+h2 {
+  color: rgb(var(--color-3));
+  font-family: var(--font-serif);
+  font-weight: 400;
+}
+
+p {
+  border-bottom: 1px solid #383b4b;
+  text-transform: none;
+}
+
+dt {
+  font-family: var(--font-sans-condensed);
+  font-size: 0.87rem;
+  letter-spacing: 2.36px;
+}
+
+dd {
+  color: rgb(var(--color-3));
+  font-family: var(--font-serif);
+  font-size: 1.75rem;
+}

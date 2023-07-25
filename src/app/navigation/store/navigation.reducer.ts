@@ -20,4 +20,4 @@ export const navigationReducer = createReducer(
   )
 );
 
-export const selectIsMobileMenuOpen = (state: State) => state.isMobileMenuOpen;
+export const getIsMobileMenuOpen = (state: State) => state.isMobileMenuOpen;

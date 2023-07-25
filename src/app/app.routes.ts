@@ -7,20 +7,20 @@ export const routes: Routes = [
   {
     loadComponent: () =>
       import(`./pages/crew/crew.component`).then((m) => m.CrewComponent),
-    path: `crew/:id`,
+    path: `crew/:index`,
   },
   {
     loadComponent: () =>
       import(`./pages/destination/destination.component`).then(
         (m) => m.DestinationComponent
       ),
-    path: `destination/:id`,
+    path: `destination/:index`,
   },
   {
     loadComponent: () =>
       import(`./pages/technology/technology.component`).then(
         (m) => m.TechnologyComponent
       ),
-    path: `technology/:id`,
+    path: `technology/:index`,
   },
 ];
