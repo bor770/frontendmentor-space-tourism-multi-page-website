@@ -16,6 +16,7 @@ import * as fromRoot from '../../store/root.reducer';
   styleUrls: [
     './styles/destination.component.css',
     `./styles/mobile.destination.component.css`,
+    `./styles/tablet.destination.component.css`,
   ],
   templateUrl: './destination.component.html',
 })

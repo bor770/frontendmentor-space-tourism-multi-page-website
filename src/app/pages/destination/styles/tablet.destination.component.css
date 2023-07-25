@@ -1,0 +1,62 @@
+.tablet {
+  margin-top: 2.5rem;
+  padding-bottom: 3.88rem;
+  text-align: center;
+}
+
+.tablet h1 {
+  font-size: 1.25rem;
+  gap: 1.19rem;
+  margin-bottom: 3.75rem;
+}
+
+.tablet img {
+  margin-bottom: 3.31rem;
+  width: 18.75rem;
+}
+
+.tablet ul {
+  height: 2.12rem;
+  letter-spacing: 2.7px;
+  margin: 0 auto 2rem;
+  width: 17.84rem;
+}
+
+.tablet h2 {
+  font-size: 5rem;
+  margin-bottom: 8px;
+}
+
+.tablet p {
+  line-height: 175%;
+  margin: 0 auto 1.75rem;
+  padding-bottom: 3.06rem;
+  width: 35.81rem;
+}
+
+.tablet dl {
+  display: grid;
+  gap: 11px;
+  grid-template-areas:
+    "distance       time      "
+    "distance-value time-value";
+  grid-template-columns: repeat(2, 13.72rem);
+  margin-inline: auto;
+  width: fit-content;
+}
+
+.tablet .distance {
+  grid-area: distance;
+}
+
+.tablet .distance-value {
+  grid-area: distance-value;
+}
+
+.tablet .time {
+  grid-area: time;
+}
+
+.tablet .time-value {
+  grid-area: time-value;
+}
