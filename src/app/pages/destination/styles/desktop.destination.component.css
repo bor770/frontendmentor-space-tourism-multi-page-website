@@ -1,0 +1,69 @@
+.desktop {
+  display: grid;
+  grid-template-areas:
+    "h1  .   "
+    "img data";
+  grid-template-columns: 31.78rem 27.81rem;
+  justify-content: space-between;
+  padding: 4.75rem 10.19rem 7.38rem 10.41rem;
+  row-gap: 4rem;
+}
+
+.desktop h1 {
+  font-size: 1.75rem;
+  gap: 1.75rem;
+  grid-area: h1;
+}
+
+.desktop img {
+  grid-area: img;
+  place-self: end;
+  width: 27.81rem;
+}
+
+.desktop .data {
+  grid-area: data;
+}
+
+.desktop ul {
+  height: 2.12rem;
+  letter-spacing: 2.7px;
+  margin-bottom: 2.31rem;
+  width: 17.84rem;
+}
+
+.desktop h2 {
+  font-size: 6.25rem;
+  margin-bottom: 14px;
+}
+
+.desktop p {
+  font-size: 1.12rem;
+  line-height: 177.78%;
+  margin-bottom: 1.75rem;
+  padding-bottom: 3.38rem;
+}
+
+.desktop dl {
+  display: grid;
+  grid-template-areas:
+    "distance       time      "
+    "distance-value time-value";
+  row-gap: 12px;
+}
+
+.desktop .distance {
+  grid-area: distance;
+}
+
+.desktop .distance-value {
+  grid-area: distance-value;
+}
+
+.desktop .time {
+  grid-area: time;
+}
+
+.desktop .time-value {
+  grid-area: time-value;
+}
