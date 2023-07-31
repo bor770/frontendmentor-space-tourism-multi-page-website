@@ -5,7 +5,6 @@ import { LetDirective } from '@ngrx/component';
 import { Store } from '@ngrx/store';
 import { Observable } from 'rxjs';
 
-import { pages } from '../pages.model';
 import { Width } from '../../shared/layout/layout.model';
 import * as fromRoot from '../../store/root.reducer';
 import * as NavigationActions from '../store/navigation.actions';
@@ -23,7 +22,7 @@ import * as NavigationActions from '../store/navigation.actions';
   templateUrl: './menu.component.html',
 })
 export class MenuComponent implements OnInit {
-  pages = pages;
+  pages = [`home`, `destination`, `crew`, `technology`];
   width$: Observable<Width>;
 
   constructor(private store: Store) {}
