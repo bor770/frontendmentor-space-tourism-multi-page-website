@@ -1,11 +1,7 @@
 <div *ngrxLet="width$ as width" [ngClass]="width">
   <ol>
-    <li
-      *ngFor="let page of pages; let i = index"
-      routerLinkActive="active"
-      [routerLinkActiveOptions]="{ exact: true }"
-    >
-      <a [routerLink]="translatePage(page)" (click)="onClose()">
+    <li *ngFor="let page of pages; let i = index" routerLinkActive="active">
+      <a [routerLink]="page" (click)="onClose()">
         <span *ngIf="width === 'mobile' || width === 'desktop'" class="index"
           >0{{ i }}</span
         >
