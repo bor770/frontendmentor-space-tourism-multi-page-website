@@ -20,7 +20,7 @@
         *ngFor="let destination of data.allDestinations; let i = index"
         routerLinkActive="active"
       >
-        <a [routerLink]="getRouterLink(i)">{{ destination.name }}</a>
+        <a [routerLink]="'/destination/' + (i + 1)">{{ destination.name }}</a>
       </li>
     </ul>
     <h2>{{ data.destination.name }}</h2>
