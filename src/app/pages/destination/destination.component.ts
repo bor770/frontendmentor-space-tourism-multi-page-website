@@ -2,9 +2,8 @@ import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { LetDirective } from '@ngrx/component';
-import { Store } from '@ngrx/store';
 
-import { BaseDataPageComponent } from 'src/app/shared/base-pages/base-data-page/base-data-page.component';
+import { BaseDataPageComponent } from '../../shared/base-pages/base-data-page/base-data-page.component';
 
 @Component({
   imports: [CommonModule, LetDirective, RouterModule],
@@ -18,8 +17,4 @@ import { BaseDataPageComponent } from 'src/app/shared/base-pages/base-data-page/
   ],
   templateUrl: './destination.component.html',
 })
-export class DestinationComponent extends BaseDataPageComponent {
-  constructor(public store: Store) {
-    super(store);
-  }
-}
+export class DestinationComponent extends BaseDataPageComponent {}

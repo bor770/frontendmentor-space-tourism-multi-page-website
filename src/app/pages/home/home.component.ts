@@ -2,7 +2,6 @@ import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { LetDirective } from '@ngrx/component';
-import { Store } from '@ngrx/store';
 
 import { BasePageComponent } from '../../shared/base-pages/base-page/base-page.component';
 
@@ -18,8 +17,4 @@ import { BasePageComponent } from '../../shared/base-pages/base-page/base-page.c
   ],
   templateUrl: './home.component.html',
 })
-export class HomeComponent extends BasePageComponent {
-  constructor(public store: Store) {
-    super(store);
-  }
-}
+export class HomeComponent extends BasePageComponent {}

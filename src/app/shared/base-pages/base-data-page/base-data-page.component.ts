@@ -1,6 +1,5 @@
 import { CommonModule } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
-import { Store } from '@ngrx/store';
 import { Observable } from 'rxjs';
 
 import data from '../../../../assets/data/data.json';
@@ -17,10 +16,6 @@ import * as fromRoot from '../../../store/root.reducer';
 export class BaseDataPageComponent extends BasePageComponent implements OnInit {
   data = data;
   index$: Observable<number>;
-
-  constructor(public store: Store) {
-    super(store);
-  }
 
   ngOnInit(): void {
     super.ngOnInit();
