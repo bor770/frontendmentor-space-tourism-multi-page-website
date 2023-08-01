@@ -1,0 +1,16 @@
+.mobile {
+  padding-top: 1.5rem;
+  text-align: center;
+}
+
+.mobile h1 {
+  font-size: 1rem;
+  letter-spacing: 2.7px;
+  margin: 0 auto 2rem;
+  width: fit-content;
+}
+
+.mobile p {
+  font-size: 0.94rem;
+  line-height: 166.67%;
+}

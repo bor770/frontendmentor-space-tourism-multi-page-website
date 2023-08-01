@@ -12,6 +12,7 @@
   --color-1: 11, 13, 23;
   --color-2: 208, 214, 249;
   --color-3: 255, 255, 255;
+  --color-divider: #383b4b;
 
   --font-sans: "Barlow", sans-serif;
   --font-sans-condensed: "Barlow Condensed", sans-serif;
@@ -24,5 +25,6 @@ body {
 }
 
 body {
-  font-family: var(--font-sans), sans-serif;
+  font-family: var(--font-sans);
+  text-transform: uppercase;
 }

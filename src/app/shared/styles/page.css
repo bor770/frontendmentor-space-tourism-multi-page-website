@@ -1,0 +1,27 @@
+h1 {
+  color: rgb(var(--color-3));
+  display: flex;
+  font-family: var(--font-sans-condensed);
+}
+
+.index {
+  opacity: 0.25;
+}
+
+.heading {
+  font-weight: 400;
+}
+
+ul {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+}
+
+h2 {
+  font-weight: 400;
+}
+
+p {
+  text-transform: none;
+}

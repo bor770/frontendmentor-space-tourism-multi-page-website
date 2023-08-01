@@ -1,0 +1,27 @@
+.dot {
+  aspect-ratio: 1;
+  background-color: rgb(var(--color-3));
+  border-radius: 50%;
+  display: block;
+  opacity: 0.17;
+}
+
+.dot:hover {
+  opacity: 0.5;
+}
+
+.active .dot {
+  opacity: 1;
+}
+
+.data {
+  display: flex;
+  flex-direction: column;
+}
+
+h2 {
+  color: rgb(var(--color-3));
+  display: flex;
+  flex-direction: column;
+  font-family: var(--font-serif);
+}

@@ -1,12 +1,9 @@
 .mobile {
-  padding-block: 1.5rem 0.62rem;
-  text-align: center;
+  padding-bottom: 0.62rem;
 }
 
 .mobile h1 {
-  font-size: 1rem;
   gap: 1.12rem;
-  margin: 0 auto 2rem;
 }
 
 .mobile img {
@@ -27,8 +24,6 @@
 }
 
 .mobile p {
-  font-size: 0.94rem;
-  line-height: 166.67%;
   margin-bottom: 2rem;
   padding-bottom: 2rem;
 }

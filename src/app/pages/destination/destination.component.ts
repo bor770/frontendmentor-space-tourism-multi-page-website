@@ -10,6 +10,10 @@ import { BaseDataPageComponent } from '../../shared/base-pages/base-data-page/ba
   selector: 'app-destination',
   standalone: true,
   styleUrls: [
+    `../../shared/styles/page.css`,
+    `../../shared/styles/mobile.page.css`,
+    `../../shared/styles/tablet.page.css`,
+    `../../shared/styles/desktop.page.css`,
     './styles/destination.component.css',
     `./styles/mobile.destination.component.css`,
     `./styles/tablet.destination.component.css`,

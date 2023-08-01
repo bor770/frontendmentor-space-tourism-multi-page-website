@@ -1,5 +1,4 @@
 .tablet {
-  margin-top: 2.5rem;
   padding-bottom: 3.88rem;
   text-align: center;
 }
@@ -7,6 +6,7 @@
 .tablet h1 {
   font-size: 1.25rem;
   gap: 1.19rem;
+  letter-spacing: 3.37px;
   margin-bottom: 3.75rem;
 }
 

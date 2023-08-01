@@ -7,7 +7,6 @@ a {
   font-family: var(--font-sans-condensed);
   letter-spacing: 2.7px;
   text-decoration: none;
-  text-transform: uppercase;
 }
 
 .index {

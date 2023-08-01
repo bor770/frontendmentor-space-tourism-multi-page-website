@@ -1,1 +1,32 @@
-<p>crew works!</p>
+<div
+  *ngrxLet="{
+    allCrew: data.crew,
+    crewMember: data.crew[index$ | async],
+    width: width$ | async
+  } as data"
+  [ngClass]="data.width"
+>
+  <h1>
+    <span class="index">02</span>
+    <span class="heading">Meet your crew</span>
+  </h1>
+  <img
+    [src]="getImagePath(data.crewMember.images.webp)"
+    [alt]="data.crewMember.name + ' image'"
+  />
+  <div class="divider"></div>
+  <ul>
+    <li *ngFor="let crewMember of data.allCrew; let i = index">
+      <a routerLinkActive="active" [routerLink]="'/crew/' + (i + 1)">
+        <span class="dot"></span>
+      </a>
+    </li>
+  </ul>
+  <div class="data">
+    <h2>
+      <span class="role">{{ data.crewMember.role }}</span>
+      <span class="name">{{ data.crewMember.name }}</span>
+    </h2>
+    <p>{{ data.crewMember.bio }}</p>
+  </div>
+</div>

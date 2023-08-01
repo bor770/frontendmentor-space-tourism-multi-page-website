@@ -6,7 +6,6 @@
 h1 {
   display: contents;
   font-weight: 400;
-  text-transform: uppercase;
 }
 
 .so {
@@ -16,6 +15,10 @@ h1 {
 .space {
   color: rgb(var(--color-3));
   font-family: var(--font-serif);
+}
+
+p {
+  text-transform: none;
 }
 
 a {
@@ -39,5 +42,4 @@ a:hover {
   font-family: var(--font-serif);
   font-size: var(--explore-font-size);
   height: var(--explore-font-size);
-  text-transform: uppercase;
 }
