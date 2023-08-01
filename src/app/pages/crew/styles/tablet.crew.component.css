@@ -1,0 +1,46 @@
+.tablet {
+  display: flex;
+  flex-direction: column;
+}
+
+.tablet h1 {
+  gap: 1.19rem;
+}
+
+.tablet img {
+  align-self: center;
+  height: 33.25rem;
+  order: 3;
+}
+
+.tablet ul {
+  margin: 0 auto 2.5rem;
+  order: 2;
+  width: 5.5rem;
+}
+
+.tablet .dot {
+  width: 10px;
+}
+
+.tablet .data {
+  gap: 1rem;
+  order: 1;
+}
+
+.tablet h2 {
+  gap: 8px;
+}
+
+.tablet .role {
+  opacity: 0.5;
+}
+
+.tablet .name {
+  font-size: 2.5rem;
+}
+
+.tablet p {
+  margin: 0 auto 2.5rem;
+  width: 28.62rem;
+}

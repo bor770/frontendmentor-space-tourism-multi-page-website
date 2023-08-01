@@ -1,3 +1,14 @@
 .tablet {
-  margin-top: 2.5rem;
+  padding-top: 2.5rem;
+  text-align: center;
+}
+
+.tablet h1 {
+  font-size: 1.25rem;
+  letter-spacing: 3.37px;
+  margin-bottom: 3.75rem;
+}
+
+.tablet p {
+  line-height: 175%;
 }
