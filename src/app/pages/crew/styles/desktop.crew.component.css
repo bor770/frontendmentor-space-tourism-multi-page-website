@@ -1,0 +1,49 @@
+.desktop {
+  display: grid;
+  grid-template-areas:
+    "h1   img"
+    "data img"
+    "ul   img";
+  grid-template-columns: 38.37rem 1fr;
+  grid-template-rows: 11.75rem 24.44rem auto;
+  position: relative;
+}
+
+.desktop h1 {
+  gap: 1.5rem;
+  grid-area: h1;
+}
+
+.desktop img {
+  bottom: 0;
+  grid-area: img;
+  justify-self: center;
+  position: absolute;
+}
+
+.desktop ul {
+  grid-area: ul;
+  width: 8.25rem;
+}
+
+.desktop .dot {
+  width: 15px;
+}
+
+.desktop .data {
+  gap: 1.69rem;
+  grid-area: data;
+}
+
+.desktop h2 {
+  gap: 15px;
+}
+
+.desktop .role {
+  font-size: 2rem;
+  opacity: 0.5;
+}
+
+.desktop .name {
+  font-size: 3.5rem;
+}

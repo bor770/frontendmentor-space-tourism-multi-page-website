@@ -5,15 +5,14 @@
     "img data";
   grid-template-columns: 31.78rem 27.81rem;
   justify-content: space-between;
-  padding: 4.75rem 10.19rem 7.38rem 10.41rem;
+  padding-bottom: 7.38rem;
+  padding-right: 10.19rem;
   row-gap: 4rem;
 }
 
 .desktop h1 {
-  font-size: 1.75rem;
   gap: 1.75rem;
   grid-area: h1;
-  letter-spacing: 4.72px;
 }
 
 .desktop img {
