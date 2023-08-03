@@ -1,0 +1,42 @@
+ul {
+  font-family: var(--font-serif);
+}
+
+a {
+  align-items: center;
+  aspect-ratio: 1;
+  border: 1px solid rgba(var(--color-3), 0.25);
+  border-radius: 50%;
+  color: var(--color-3);
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+}
+
+a:hover {
+  border-color: var(--color-3);
+}
+
+a.active {
+  background-color: rgb(var(--color-3));
+  color: rgb(var(--color-1));
+}
+
+.data {
+  display: flex;
+  flex-direction: column;
+}
+
+h2 {
+  display: flex;
+  flex-direction: column;
+}
+
+.terminology {
+  font-family: var(--font-sans-condensed);
+}
+
+.name {
+  color: rgb(var(--color-3));
+  font-family: var(--font-serif);
+}

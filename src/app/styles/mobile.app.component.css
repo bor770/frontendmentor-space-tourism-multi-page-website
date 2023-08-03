@@ -1,5 +1,5 @@
 .mobile {
-  padding: 1.5rem 1.5rem 3rem;
+  padding: 1.5rem var(--mobile-padding-inline) 3rem;
 }
 
 .mobile img {

@@ -1,1 +1,38 @@
-<p>technology works!</p>
+<div
+  *ngrxLet="{
+    allTechnologies: data.technology,
+    technology: data.technology[index$ | async],
+    image: data.technology[index$ | async].images,
+    width: width$ | async
+  } as data"
+  [ngClass]="data.width"
+>
+  <h1>
+    <span class="index">03</span>
+    <span class="heading">Space launch 101</span>
+  </h1>
+  <img
+    [src]="
+      getImagePath(
+        data.width === 'mobile' || data.width === 'tablet'
+          ? data.image.landscape
+          : data.image.portrait
+      )
+    "
+    [alt]="data.technology.name + ' image'"
+  />
+  <ul>
+    <li *ngFor="let technology of data.allTechnologies; let i = index">
+      <a routerLinkActive="active" [routerLink]="'/technology/' + (i + 1)">{{
+        i + 1
+      }}</a>
+    </li>
+  </ul>
+  <div class="data">
+    <h2>
+      <span class="terminology">The terminology...</span>
+      <span class="name">{{ data.technology.name }}</span>
+    </h2>
+    <p>{{ data.technology.description }}</p>
+  </div>
+</div>

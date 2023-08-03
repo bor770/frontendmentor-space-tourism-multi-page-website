@@ -17,6 +17,8 @@
   --font-sans: "Barlow", sans-serif;
   --font-sans-condensed: "Barlow Condensed", sans-serif;
   --font-serif: "Bellefair", serif;
+
+  --mobile-padding-inline: 1.5rem;
 }
 
 :root::-webkit-scrollbar {

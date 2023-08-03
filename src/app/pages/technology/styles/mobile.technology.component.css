@@ -1,0 +1,36 @@
+.mobile {
+  padding-bottom: 8px;
+}
+
+.mobile h1 {
+  gap: 1rem;
+}
+
+.mobile img {
+  height: 10.62rem;
+  margin-bottom: 2.12rem;
+  transform: translateX(calc(-1 * var(--mobile-padding-inline)));
+  width: 100vw;
+}
+
+.mobile ul {
+  margin: 0 auto 1.62rem;
+  width: 9.5rem;
+}
+
+.mobile a {
+  width: 2.5rem;
+}
+
+.mobile .data {
+  gap: 1rem;
+}
+
+.mobile h2 {
+  gap: 9px;
+}
+
+.mobile .terminology {
+  font-size: 0.87rem;
+  letter-spacing: 2.36px;
+}
