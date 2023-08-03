@@ -1,0 +1,41 @@
+.tablet {
+  padding-bottom: 6.06rem;
+}
+
+.tablet h1 {
+  gap: 1rem;
+}
+
+.tablet img {
+  margin-bottom: 3.5rem;
+  transform: translateX(calc(-1 * var(--tablet-padding-left)));
+  width: 100vw;
+}
+
+.tablet ul {
+  margin: 0 auto 2.75rem;
+  width: 13.12rem;
+}
+
+.tablet a {
+  width: 3.75rem;
+}
+
+.tablet .data {
+  gap: 1rem;
+  margin-inline: auto;
+  width: 28.62rem;
+}
+
+.tablet h2 {
+  gap: 1rem;
+}
+
+.tablet .terminology {
+  font-size: 1rem;
+  letter-spacing: 2.7px;
+}
+
+.tablet .name {
+  font-size: 2.5rem;
+}

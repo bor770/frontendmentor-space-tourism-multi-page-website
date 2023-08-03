@@ -19,6 +19,7 @@
   --font-serif: "Bellefair", serif;
 
   --mobile-padding-inline: 1.5rem;
+  --tablet-padding-left: 2.44rem;
 }
 
 :root::-webkit-scrollbar {
