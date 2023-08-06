@@ -1,0 +1,9 @@
+{
+  "hosting": [
+    {
+      "target": "space-tourism-multi-page-website",
+      "source": ".",
+      "frameworksBackend": {}
+    }
+  ]
+}

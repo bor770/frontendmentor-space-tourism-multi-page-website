@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "frontendmentor-space-tourism": {
+      "hosting": {
+        "space-tourism-multi-page-website": [
+          "frontendmentor-space-tourism"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "frontendmentor-space-tourism"
+  }
+}
