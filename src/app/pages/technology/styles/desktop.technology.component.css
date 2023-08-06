@@ -1,0 +1,48 @@
+.desktop {
+  align-content: space-between;
+  display: grid;
+  grid-template-areas:
+    "h1 h1   .  "
+    ".  .    img"
+    "ul data img";
+  grid-template-columns: 10rem 1fr 32.2rem;
+  grid-template-rows: 3.76rem 6.93rem;
+  padding-bottom: 6.31rem;
+}
+
+.desktop h1 {
+  gap: 1.5rem;
+  grid-area: h1;
+}
+
+.desktop img {
+  grid-area: img;
+}
+
+.desktop ul {
+  flex-direction: column;
+  grid-area: ul;
+  height: 19rem;
+}
+
+.desktop a {
+  width: 5rem;
+}
+
+.desktop .data {
+  gap: 1.06rem;
+  grid-area: data;
+}
+
+.desktop h2 {
+  gap: 11px;
+}
+
+.desktop .terminology {
+  font-size: 1rem;
+  letter-spacing: 2.7px;
+}
+
+.desktop .name {
+  font-size: 3.5rem;
+}
